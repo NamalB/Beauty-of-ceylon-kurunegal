@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Us</title>
+</head>
+<style type="text/css">
+	body{
+		margin: :0;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.nav{
+		background-color: seagreen;
+		overflow: hidden;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		opacity: 0.8;
+		display: flex;
+		align-items: center;
+	}
+
+	.nav a{
+		float: left;
+		color: white;
+		text-decoration: none;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 20px 25px;
+	}
+	.nav a:hover{
+		background-color: blueviolet;
+		color: black;
+	}
+
+	.footer{
+		position: fixed;
+		bottom: 0;
+		text-align: center;
+		background-color: #456595;
+		opacity:0.8;
+		width: 100%;
+		left: 0;
+		padding-top: 10px;
+	}
+	.footer p{
+		color: white;
+		text-align: center;
+		font-size: 16px;
+	}	
+	form{
+		margin-top:75px;
+		margin-right:0px;
+		left: 0;
+
+	}
+	.a{
+		width: 75%;
+		height: 30px;
+	}
+	p{
+		font-size: 15px;
+	}
+
+	select{
+		height: 30px;
+		font-size: 15px;
+	}
+</style>
+<body>
+<div class="nav">
+	<a href="Home.html">Home</a>
+	<a href="TopDestinations.html">Top Destinations</a>
+	<a href="VisitUs.html">Visit Us</a>
+	<a href="Gallery.html">Gallery</a>
+	<a href="Contact Us.html">Contact Us</a>
+</div>
+
+<form action="#" method="post">
+	<fieldset style="background-color: rgba(200, 200, 200, 0.3);">
+		<legend align="left" style="font-family: arial;font-size: 200%;color: rgba(0, 0, 255, 1.0);">Contact Us</legend>
+		<p>First Name <br><input type="text" name="First_Name" class="a" placeholder="First Name...."> </p>
+		<p>Last Name<br><input type="text" name="Last_Name" class="a" placeholder="Last Name...."></p>
+		<p>Count of Visited Places	:<input type="Number" name="Visited_Places" min="0" max="6"></p>
+		<p>Travel by  :<input type="Checkbox" name="Travel_Meidum">Bus <input type="Checkbox" name="Travel_Meidum">Train <input type="Checkbox" name="Travel_Meidum">Private Vehicle</p>
+		<p>Travel With 	:<input type="radio" name="Travel_With">Local Travel agency <input type="radio" name="Travel_With">Private</p>
+		<p>District<br>
+		<select id="District" name="District" style="width:75%">
+		<optgroup label="District">
+			<option value="Ampara">Ampara</option>
+			<option value="Anuradhapura">Anuradhapura</option>
+			<option value="Badulla">Badulla</option>
+			<option value="Batticloa">Batticloa</option>
+			<option value="Colombo">Colombo</option>
+			<option value="Galle">Galle</option>
+			<option value="Gampaha">Gampaha</option>
+			<option value="Hambanthota">Hambanthota</option>
+			<option value="Jaffna">Jaffna</option>
+			<option value="Kaluthara">Kaluthara</option>
+			<option value="Kandy">Kandy</option>
+			<option value="Kegalle">Kegalle</option>
+			<option value="Kilinochchi">Kilinochchi</option>
+			<option value="Kurunegala">Kurunegala</option>
+			<option value="Mannar">Mannar</option>
+			<option value="Matale">Matale</option>
+			<option value="Matara">Matara</option>
+			<option value="Monaragala">Monaragala</option>
+			<option value="Nuwara Eliya">Nuwara Eliya</option>
+			<option value="Polonnaruwa">Polonnaruwa</option>
+			<option value="Puttalam">Puttalam</option>
+			<option value="Ratnapura">Ratnapura</option>
+			<option value="Trincomalee">Tricomalee</option>
+			<option value="Vavuniya">Vavuniya</option>
+		</optgroup>
+		</select></p>
+		<p>Subject<br><textarea name="comment" placeholder="Enter your message" style="width:75%;height: 100px;"></textarea></p>
+		<input type="submit" name="submit" style="background-color:rgba(0, 255, 200, 1.0);height: 30px;width:125px;font-size: 20px;border: 2px white;">
+	</fieldset>
+</form>
+
+
+
+<div class="footer">
+<p>Beauty Of Ceylon-Kurunegala ©2022, All Rights Recerved</p>
+</div>
+</body>
+</html>
